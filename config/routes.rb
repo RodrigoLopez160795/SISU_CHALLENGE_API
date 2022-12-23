@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  get '/servicio/paises', to: 'countries#find_country'
+  post '/servicio/estados', to: 'states#find_state'
+  post '/servicio/ciudades', to: 'cities#find_cities'
+  post '/servicio/guardar', to: 'users#create'
 end
