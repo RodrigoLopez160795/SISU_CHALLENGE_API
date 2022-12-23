@@ -1,7 +1,23 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+Country.create(name: 'México')
+Country.create(name: 'Canada')
+Country.create(name: 'Estados Unidos')
+
+State.create(name: 'Chihuahua', country_id: 1)
+State.create(name: 'Nayarit', country_id: 1)
+State.create(name: 'Alberta', country_id: 2)
+State.create(name: 'Ontario', country_id: 2)
+State.create(name: 'California', country_id: 3)
+State.create(name: 'Colorado', country_id: 3)
+
+City.create(name: 'Chihuahua', state_id: 1)
+City.create(name: 'Ojinaga', state_id: 1)
+City.create(name: 'Tepic', state_id: 2)
+City.create(name: 'Compostela', state_id: 2)
+City.create(name: 'Calgary', state_id: 3)
+City.create(name: 'Lacombe', state_id: 3)
+City.create(name: 'Toronto', state_id: 4)
+City.create(name: 'Ottawa', state_id: 4)
+City.create(name: 'Los Ángeles', state_id: 5)
+City.create(name: 'Sacramento', state_id: 5)
+City.create(name: 'Denver', state_id: 6)
+City.create(name: 'Aspen', state_id: 6)
